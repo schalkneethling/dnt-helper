@@ -1,0 +1,36 @@
+{
+  "name": "dnt-helper",
+  "version": "1.0.0",
+  "description": "Respect user choice and honor DNT, wrap all the things",
+  "main": "js/dnt-helper.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "pretest": "npm run test:lint",
+    "test": "karma start tests/unit/karma.conf.js",
+    "test:lint": "jshint js/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schalkneethling/dnt-helper.git"
+  },
+  "keywords": [
+    "dnt",
+    "javascript",
+    "util"
+  ],
+  "author": "Schalk Neethling",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schalkneethling/dnt-helper/issues"
+  },
+  "homepage": "https://github.com/schalkneethling/dnt-helper",
+  "devDependencies": {
+    "jasmine-core": "^2.3.4",
+    "jshint": "^2.8.0",
+    "karma": "^0.13.15",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.6"
+  }
+}
