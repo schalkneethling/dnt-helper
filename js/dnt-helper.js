@@ -27,9 +27,9 @@ function _dntEnabled(dnt, userAgent) {
     // http://www.regexr.com/3c2el
     var platform = ua.match(/Windows.+?(?=;)/g);
 
-    // With old versions of IE, DNT did not exist so we simply return false;
+    // With old versions of IE, DNT did not exist so we assume it's disabled
     if (isIE && typeof Array.prototype.indexOf !== 'function') {
-        return false;
+        dntStatus = 'Disabled';
     } else if (fxMatch && parseInt(fxMatch[1], 10) < 32) {
         // Can't say for sure if it is 1 or 0, due to Fx bug 887703
         dntStatus = 'Unspecified';
