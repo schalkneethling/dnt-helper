@@ -24,4 +24,4 @@ if (!_dntEnabled()) {
 }
 ```
 
-[Read the blog post](http://schalkneethling.github.io/blog/2015/11/06/respect-user-choice-do-not-track/)
+[Read the blog post](https://medium.com/@schalkneethling/respect-user-choice-do-not-track-6c13b805b256)
